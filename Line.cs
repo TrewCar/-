@@ -18,8 +18,6 @@ struct Line
     }
     public List<Line> Split()
     {
-        List<Line> res = new List<Line>();
-
         double len = (int)Math.Sqrt(Math.Pow(Start.X - End.X, 2) + Math.Pow(Start.Y - End.Y, 2));
         double segment = len / 3;
 
